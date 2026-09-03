@@ -1,0 +1,12 @@
+{
+  "name": "lfg",
+  "displayName": "Plan & Go",
+  "version": "1.0.0",
+  "description": "Plan with /lfp. Ship with /lfg. Agent skills for backlog-ready plans and proud-bar execution.",
+  "author": {
+    "name": "babaVC",
+    "url": "https://babavc.com"
+  },
+  "skills": "./",
+  "keywords": ["planning", "execution", "agents", "skills", "lfp", "lfg"]
+}
