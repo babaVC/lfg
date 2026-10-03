@@ -5,7 +5,6 @@ description: >-
   option decision interviews, draft plan via harness Plan feature, scope interview,
   LOCKED plan with LFG handover. Use when the user says "lfp", "LFP", "let's fucking plan".
   Pairs with the lfg skill. Not for trivial fixes or greenfield product validation.
-disable-model-invocation: true
 ---
 
 # LFP — Let's Fucking Plan

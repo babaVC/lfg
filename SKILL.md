@@ -6,7 +6,6 @@ description: >-
   and subagent dispatch. Use when the user says "lfg", "LFG", "let's fucking go".
   Builder subagent implements; reviewer subagents critique; conductor decides
   next waves. Not for quick fixes or time-boxed builds.
-disable-model-invocation: true
 ---
 
 # LFG — Let's Fucking Go
@@ -62,6 +61,8 @@ Loop floors: M=2, L=3 — **unless exit criteria met earlier** (see conductor-lo
 - **Builder subagent owns:** Wave BUILD — full plan implementation ([`builder-prompt.md`](references/builder-prompt.md)).
 - **Reviewer subagents own:** Read-only critique — one dedicated prompt per lens. **`composer-2.5-fast`** on Cursor.
 - **Fixer** (subagent or conductor): FIX waves only — not same session as reviewer who found the issue. Conductor may FIX inline for trivial sets (see conductor-loop.md).
+- **Dispatch in the background.** Builders, fixers and reviewers run with `run_in_background: true`; the conductor reports progress between completions. Foreground builders blocked the chat for 23 min with no visible progress (2026-10-02).
+- **Report from results, not intent.** Name and link each subagent from the ID and title the dispatch returned; list only the reviewers actually launched. A summary once claimed an edge reviewer that was never dispatched (2026-10-02).
 
 ## Conductor loop (not a fixed script)
 
