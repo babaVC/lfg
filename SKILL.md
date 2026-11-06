@@ -157,7 +157,7 @@ Full list: [`references/gate-checklist.md`](references/gate-checklist.md).
 
 | Condition | Action |
 |---|---|
-| Exit criteria + gates PASS + proud bar YES | **Done.** Deliver summary + commit draft. |
+| Exit criteria + gates PASS + proud bar YES | **Done.** Deliver summary + git handover (PR link or commit draft). |
 | Tier floor met but FAILs remain | **Keep looping** or escalate at 6 fix loops with BLOCKERs |
 | Same FAIL twice after fix | **Stop.** Likely thrashing — escalate with root cause. |
 | Blocked on the user | **Pause.** One clear question; don't guess. |
@@ -213,4 +213,4 @@ Full list: [`references/gate-checklist.md`](references/gate-checklist.md).
 - Not a time-boxed demo workflow
 - Not a plan generator — use **LFP** ([`lfp/SKILL.md`](lfp/SKILL.md)); LFG Phase 0 only boosts an existing plan
 - Not for quick fixes — use direct execution
-- Not permission to commit — stage and draft only unless the user asked
+- Not permission to touch `main` — commit only where the repo's rules allow it, on a feature branch with a draft PR; otherwise stage and draft

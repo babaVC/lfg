@@ -211,7 +211,7 @@ Full copy-paste prompts in [`reviewer-prompts.md`](reviewer-prompts.md).
 - Scope-based reviewer dispatch — skip irrelevant lenses
 - Evaluate after every subagent return; decide next wave explicitly
 - Conductor dogfood before PROUD YES (or explicit RUNTIME UNVERIFIED)
-- Stage + draft commit message (never commit unless user asked)
+- Git per the repo's commit rule: feature branch + draft PR where agents may commit; otherwise stage + draft the message. Never commit to main, never merge
 
 ## Do NOT
 
@@ -242,7 +242,7 @@ Full copy-paste prompts in [`reviewer-prompts.md`](reviewer-prompts.md).
 4. Reviewer findings — resolved vs open
 5. PROUD B1–B5
 6. 5-layer eval (tool · steps · trajectory · task · business)
-7. Commit message draft
+7. Git handover — branch + PR link, or commit message draft
 8. Stats — tier · loops N · reviewer launches N
 9. **Dogfood** — `PASS: [what was clicked]` OR `RUNTIME UNVERIFIED: [smoke steps for user]`
 10. **E2E** — `PASS (N/N script)` | `N/A` | `MANUAL` | `ADDED this session`
