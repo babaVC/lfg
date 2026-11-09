@@ -161,7 +161,7 @@ Mark N/A for non-runtime changes.
 |---|---|---|
 | G1 | Repo git rule | Delivery follows the repo's own commit rule (its AGENTS.md / CLAUDE.md). No rule stated: stage and draft, don't commit |
 | G2 | Clean changes | Only relevant files, named explicitly (no `add -A`), no secrets; messages follow repo style |
-| G3 | Main untouched | Nothing committed or pushed to `main`/`master`, nothing merged by the agent. Where agents may commit: a feature branch and a draft PR (or the branch named, when there's no remote). Where they may not: a paste-ready commit draft |
+| G3 | Handover | Nothing merged or force-pushed by the agent, and the default branch touched only if the repo's rule allows it. The handover is a branch + draft PR (or the branch named, when there's no remote), or a paste-ready commit draft where agents don't commit |
 
 ---
 

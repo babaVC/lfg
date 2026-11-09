@@ -211,7 +211,7 @@ Full copy-paste prompts in [`reviewer-prompts.md`](reviewer-prompts.md).
 - Scope-based reviewer dispatch — skip irrelevant lenses
 - Evaluate after every subagent return; decide next wave explicitly
 - Conductor dogfood before PROUD YES (or explicit RUNTIME UNVERIFIED)
-- Git per the repo's commit rule: feature branch + draft PR where agents may commit; otherwise stage + draft the message. Never commit to main, never merge
+- Git per the repo's commit rule: feature branch + draft PR where agents may commit; otherwise stage + draft the message. Never merge; the default branch only if the repo's rule allows it
 
 ## Do NOT
 

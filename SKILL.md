@@ -213,4 +213,4 @@ Full list: [`references/gate-checklist.md`](references/gate-checklist.md).
 - Not a time-boxed demo workflow
 - Not a plan generator — use **LFP** ([`lfp/SKILL.md`](lfp/SKILL.md)); LFG Phase 0 only boosts an existing plan
 - Not for quick fixes — use direct execution
-- Not permission to touch `main` — commit only where the repo's rules allow it, on a feature branch with a draft PR; otherwise stage and draft
+- Not permission to commit beyond the repo's own rule — where it allows commits, use a feature branch and a draft PR; otherwise stage and draft
