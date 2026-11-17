@@ -159,9 +159,9 @@ Mark N/A for non-runtime changes.
 
 | # | Gate | PASS when |
 |---|---|---|
-| G1 | Staged | Relevant files staged (not secrets) |
-| G2 | Commit draft | Paste-ready message follows repo style |
-| G3 | No commit unless asked | `git commit` not run unless the user requested |
+| G1 | Repo git rule | Delivery follows the repo's own commit rule (its AGENTS.md / CLAUDE.md). No rule stated: stage and draft, don't commit |
+| G2 | Clean changes | Only relevant files, named explicitly (no `add -A`), no secrets; messages follow repo style |
+| G3 | Handover | Nothing merged or force-pushed by the agent, and the default branch touched only if the repo's rule allows it. The handover is a branch + draft PR (or the branch named, when there's no remote), or a paste-ready commit draft where agents don't commit |
 
 ---
 
